@@ -1,7 +1,7 @@
 // Import dependencies
 const express = require('express');
 const mongoose = require('mongoose');
-const routes = require('./routes');
+const routes = require('./routes/api');
 
 // Initialize the Express app
 const app = express();
