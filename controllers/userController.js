@@ -1,4 +1,4 @@
-const User = require('../models/User'); // Ensure the path is correct
+const User = require('../models/User');
 
 module.exports = {
   // Fetch all users
@@ -69,7 +69,7 @@ module.exports = {
       if (!deletedUser) {
         return res.status(404).json({ message: 'User not found' });
       }
-      res.json({ message: 'User deleted' });
+      res.json({ message: 'User deleted successfully' });
     } catch (err) {
       console.error('Error deleting user:', err);
       res.status(500).json({ error: 'Internal Server Error', details: err.message });

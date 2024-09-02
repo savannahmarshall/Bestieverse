@@ -15,6 +15,9 @@ module.exports = {
   getThoughtById: async (req, res) => {
     try {
       const thought = await Thought.findById(req.params.thoughtId);
+      if (!thought) {
+        return res.status(404).json({ message: 'Thought not found' });
+      }
       res.json(thought);
     } catch (err) {
       res.status(500).json(err);
@@ -39,6 +42,9 @@ module.exports = {
         req.body,
         { new: true }
       );
+      if (!updatedThought) {
+        return res.status(404).json({ message: 'Thought not found' });
+      }
       res.json(updatedThought);
     } catch (err) {
       res.status(500).json(err);
@@ -48,8 +54,11 @@ module.exports = {
   // Delete a thought by ID
   deleteThought: async (req, res) => {
     try {
-      await Thought.findByIdAndDelete(req.params.thoughtId);
-      res.json({ message: 'Thought deleted' });
+      const deletedThought = await Thought.findByIdAndDelete(req.params.thoughtId);
+      if (!deletedThought) {
+        return res.status(404).json({ message: 'Thought not found' });
+      }
+      res.json({ message: 'Thought deleted successfully' });
     } catch (err) {
       res.status(500).json(err);
     }
@@ -63,6 +72,9 @@ module.exports = {
         { $addToSet: { reactions: req.body } },
         { new: true }
       );
+      if (!thought) {
+        return res.status(404).json({ message: 'Thought not found' });
+      }
       res.json(thought);
     } catch (err) {
       res.status(500).json(err);
@@ -72,13 +84,26 @@ module.exports = {
   // Remove a reaction from a thought
   removeReaction: async (req, res) => {
     try {
+      const { thoughtId, reactionId } = req.params;
+
+      // Log the IDs for debugging
+      console.log('Removing reaction:', reactionId);
+      console.log('From thought:', thoughtId);
+
+      //update
       const thought = await Thought.findByIdAndUpdate(
-        req.params.thoughtId,
-        { $pull: { reactions: { reactionId: req.body.reactionId } } },
-        { new: true }
+        thoughtId,
+        { $pull: { reactions: { reactionId: reactionId } } },
+        { new: true } 
       );
+
+      if (!thought) {
+        return res.status(404).json({ message: 'Thought not found' });
+      }
+
       res.json(thought);
     } catch (err) {
+      console.error('Error removing reaction:', err);
       res.status(500).json(err);
     }
   }
