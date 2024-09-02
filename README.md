@@ -33,7 +33,7 @@ To use this application, follow these steps:
 **Please click [here]() to view a demo on how to use this application.**
 
 
-![screenshot of CRUD testing in Insomnia]()
+![screenshot of CRUD testing in Insomnia](https://github.com/savannahmarshall/Bestieverse/blob/main/assets/challenge-18.png)
 
 
 
