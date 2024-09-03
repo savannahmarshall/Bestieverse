@@ -26,15 +26,17 @@ To get started with Bestieverse, follow these steps:
 
 After completing the installation steps, follow these instructions to start using Bestieverse:
 
-**Start the Server:**  Launch the server to start the application by running: **npm run start.**
+1. **Start the Server:**  Launch the server to start the application by running: **npm run start.**
 
-**Interacting with the API:** Use Insomnia, Postman, or any other API client to test the API routes.
+2. **Interacting with the API:** Use Insomnia, Postman, or any other API client to test the API routes.
 *Create, update, delete users and thoughts.
 *Add or remove friends and reactions.
 
+3. **Seed Data:** You can create your own seed data using the CRUD operations mentioned below
+
 **API Routes**
 
-Below are the available API routes for interacting with Bestieverse:
+Here are the available API routes for interacting with Bestieverse:
 
 **/api/users** POST to create a new user, GET to show all users.
 **/api/users/:userId** PUT to update user information by ID and GET to find a single user by ID.
