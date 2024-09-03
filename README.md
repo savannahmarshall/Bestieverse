@@ -1,8 +1,7 @@
 # Bestieverse
 
 ## Description
-Express.js for routing, a MongoDB database, and the Mongoose ODM. Created seed data using Insomnia and API.
-
+Bestieverse is a social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list. Built using Express.js for routing, MongoDB as the database, and the Mongoose ODM, this application allows for full CRUD operations. You can use Insomnia to create, update, and delete users and thoughts, as well as add and remove friends and reactions. 
   
 ## Table of Contents
   
@@ -14,7 +13,14 @@ Express.js for routing, a MongoDB database, and the Mongoose ODM. Created seed d
 - [Questions](#questions)
 
 ## Installation
-To use this application, you must install [Node.js](https://nodejs.org/en).
+To get started with Bestieverse, follow these steps:
+
+1. **Ensure Node.js is Installed:** Make sure Node.js is installed on your system. If not, download and install it from the official [Node.js](https://nodejs.org/en) website.
+2. **Clone the Repository:**  Clone this repository to your local machine using the following command:
+   git clone https://github.com/savannahmarshall/Bestieverse.git
+
+
+
 
 ## Usage
 
@@ -28,7 +34,15 @@ To use this application, follow these steps:
 
 **Start Server:** Launch the server to start the application using the command: **npm run start**
 
-**Test API Endpoints:** Use Insomnia or a similar API client to test the API endpoints and ensure everything is functioning as expected. 
+The following API Routes are features of this application:
+**/api/users** POST to create a new user, GET to show all users.
+**/api/users/:userId** PUT to update user information by ID and GET to find a single user by ID.
+**/api/users/:userId** DELETE to delete a user by ID.
+**/api/users/:userId/friends/:friendId** POST to add a new friend to a user's friend list, DELETE to remove a friend from user's friend list.
+**/api/thoughts** GET to see all thoughts, POST to create a thought.
+**/api/thoughts/:thoughtId** GET to see thoughts by ID, PUT to update thought by ID and DELETE to delelete thought by ID.
+**/api/thoughts/:thoughtId/reactions** POST to create a reaction stored with a thought, DELETE to pull and remove a reaction by the reaction's ID value.
+
 
 **Please click [here]() to view a demo on how to use this application.**
 
