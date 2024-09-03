@@ -29,8 +29,8 @@ After completing the installation steps, follow these instructions to start usin
 1. **Start the Server:**  Launch the server to start the application by running: **npm run start.**
 
 2. **Interacting with the API:** Use Insomnia, Postman, or any other API client to test the API routes.
-*Create, update, delete users and thoughts.
-*Add or remove friends and reactions.
+-Create, update, delete users and thoughts.
+-Add or remove friends and reactions.
 
 3. **Seed Data:** You can create your own seed data using the CRUD operations mentioned below
 
@@ -38,13 +38,13 @@ After completing the installation steps, follow these instructions to start usin
 
 Here are the available API routes for interacting with Bestieverse:
 
-**/api/users** POST to create a new user, GET to show all users.
-**/api/users/:userId** PUT to update user information by ID and GET to find a single user by ID.
-**/api/users/:userId** DELETE to delete a user by ID.
-**/api/users/:userId/friends/:friendId** POST to add a new friend to a user's friend list, DELETE to remove a friend from user's friend list.
-**/api/thoughts** GET to see all thoughts, POST to create a thought.
-**/api/thoughts/:thoughtId** GET to see thoughts by ID, PUT to update thought by ID and DELETE to delelete thought by ID.
-**/api/thoughts/:thoughtId/reactions** POST to create a reaction stored with a thought, DELETE to pull and remove a reaction by the reaction's ID value.
+-**/api/users** POST to create a new user, GET to show all users.
+-**/api/users/:userId** PUT to update user information by ID and GET to find a single user by ID.
+-**/api/users/:userId** DELETE to delete a user by ID.
+-**/api/users/:userId/friends/:friendId** POST to add a new friend to a user's friend list, DELETE to remove a friend from user's friend list.
+-**/api/thoughts** GET to see all thoughts, POST to create a thought.
+-**/api/thoughts/:thoughtId** GET to see thoughts by ID, PUT to update thought by ID and DELETE to delelete thought by ID.
+-**/api/thoughts/:thoughtId/reactions** POST to create a reaction stored with a thought, DELETE to pull and remove a reaction by the reaction's ID value.
 
 
 **Please click [here]() to view a demo on how to use this application.**
