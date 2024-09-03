@@ -34,7 +34,7 @@ After completing the installation steps, follow these instructions to start usin
 - Create, update, delete users and thoughts.
 - Add or remove friends and reactions.
 
-3. **Seed Data:** You can create your own seed data using the CRUD operations mentioned below
+3. **Seed Data:** You can create your own seed data using the CRUD operations mentioned below.
 
 **API Routes**
 
@@ -59,7 +59,7 @@ Here are the available API routes for interacting with Bestieverse:
 If you are interesting in contributing to this project, please contact me directly. 
 
 ## License
-This project is licensed under the [MIT License]((https://opensource.org/license/MIT).
+This project is licensed under the [MIT License](https://opensource.org/license/MIT).
 
 ## Tests
 There are no tests for this application.
