@@ -16,25 +16,26 @@ Bestieverse is a social network web application where users can share their thou
 To get started with Bestieverse, follow these steps:
 
 1. **Ensure Node.js is Installed:** Make sure Node.js is installed on your system. If not, download and install it from the official [Node.js](https://nodejs.org/en) website.
-2. **Clone the Repository:**  Clone this repository to your local machine using the following command:
-   git clone https://github.com/savannahmarshall/Bestieverse.git
-
-
+   
+2. **Clone the Repository:**  Clone or fork this repository to your local machine.
+   
+3. **Install Dependencies:** Navigate to the project directory and run the following command to install all necessary dependencies: **npm install.**
 
 
 ## Usage
 
-To use this application, follow these steps:
+After completing the installation steps, follow these instructions to start using Bestieverse:
 
-**Ensure Node.js is Installed:** Confirm that you have Node.js installed. If not, download and install it from the official Node.js website which can be found in the installation section above.
+**Start the Server:**  Launch the server to start the application by running: **npm run start.**
 
-**Clone the Repository:** Clone the project repository to your local machine.
+**Interacting with the API:** Use Insomnia, Postman, or any other API client to test the API routes.
+*Create, update, delete users and thoughts.
+*Add or remove friends and reactions.
 
-**Install Dependencies:** Navigate to the project directory and run the following command: **npm install** to install the necessary dependencies.
+**API Routes**
 
-**Start Server:** Launch the server to start the application using the command: **npm run start**
+Below are the available API routes for interacting with Bestieverse:
 
-The following API Routes are features of this application:
 **/api/users** POST to create a new user, GET to show all users.
 **/api/users/:userId** PUT to update user information by ID and GET to find a single user by ID.
 **/api/users/:userId** DELETE to delete a user by ID.
@@ -52,19 +53,16 @@ The following API Routes are features of this application:
 
 
 ## Contributing
-* [JavaScript](https://www.javascript.com/)
-* [Node.js](https://nodejs.org/en)
-* [MongoDB](https://www.mongodb.com/)
-* [Insomnia](https://insomnia.rest/)
+If you are interesting in contributing to this project, please contact me directly. 
 
 ## License
-This project was created using the [MIT License](https://opensource.org/license/MIT).
+This project is licensed under the [MIT License]((https://opensource.org/license/MIT).
 
 ## Tests
 There are no tests for this application.
 
 ## Questions
-Please contact me directly with any questions. My information is below:  
+If you have any questions about this project, feel free to reach out:
 
 **GitHub:** https://github.com/savannahmarshall  
 
